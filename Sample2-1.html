@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Sample2-1</title>
+        <style>
+            .css1 {color: red;}
+            .css2 {color: blue;}
+        </style>
+        <script type="text/javascript">
+            // 在這裡的javascript會被調用的時候才執行
+            // 還沒載入body前
+            function addclass(){
+                document.getElementById("div1").classList.add("css2");
+            }
+
+            function removeclass(){
+                document.getElementById("div1").classList.remove("css2");
+            }
+        </script>
+    </head>
+    <body>
+        <div id="div1" class="css1">fannie is a very beautiful girl!!</div>
+
+        <input type='button' value='addclass' onclick="addclass()" /><br />
+        <input type='button' value='rmclass' onclick="removeclass()" />
+        <script type="text/javascript">
+            // 在這裡的javascript會在頁面載入的時候執行
+            
+        </script>
+    </body>
+</html>
