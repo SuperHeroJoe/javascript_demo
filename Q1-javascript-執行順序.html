@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Q2</title>
+        <title>Q1</title>
         <meta charset="utf-8">
         <style>
             .css1 {color: red;}
@@ -13,30 +13,18 @@
         <script src="js/jquery-3.2.1.min.js"></script>
 
         <script type="text/javascript">
-            var div1 = null;
+            $('#div1').addClass("css1");
 
             $(document).ready(function(){
-                div1 = $('#div1');
-
-                $('#btn_divAddClass').click(function(){
-                    div1.addClass("css2");
-                });
+                $('#div1').addClass("css2");
             });
-
-            function div1_addclass(){
-                div1.addClass("css1");
-            }
         </script>
     </head>
     <body>
         <div id="div1">看這裡</div>
-        
-        <input id="btn_divAddClass" type="button" value="click" onclick="div1_addclass()" />
-        
+
         <script type="text/javascript">
-            $('#btn_divAddClass').click(function(){
-                div1.addClass("css3");
-            });
+            $('#div1').addClass("css3").removeClass("css3");
         </script>
     </body>
 </html>
