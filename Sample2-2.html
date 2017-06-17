@@ -1,6 +1,8 @@
+<!DOCTYPE html>
 <html>
     <head>
         <title>Sample2-2</title>
+        <meta charset="utf-8">
         <style>
             .css1 {color: red;}
             .css2 {color: blue;}
@@ -10,13 +12,14 @@
             // 還沒載入body前
             
         </script>
-        <script src="Sample2-2.js"></script>
+        <!--採用讀取外部javascript檔案的方式-->
+        <script src="js/Sample2-2.js"></script>
     </head>
     <body>
         <div id="div1" class="css1">fannie is a very beautiful girl!!</div>
 
-        <input type='button' value='addclass' onclick="addclass()" /><br />
-        <input type='button' value='rmclass' onclick="removeclass()" />
+        <input type='button' value='addclass-新增一個css屬性' onclick="addclass()" /><br />
+        <input type='button' value='rmclass-移除一個指定的css屬性' onclick="removeclass()" />
         <script type="text/javascript">
             // 在這裡的javascript會在頁面載入的時候執行
             

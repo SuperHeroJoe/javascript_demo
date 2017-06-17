@@ -8,11 +8,12 @@
         </script>
     </head>
     <body>
-        <input id='input1' type="text" value="fannie is a girl!" />
-
+        <form id="form1" name="form1">
+            <input id='input1' name='form2' type="text" value="fannie is a girl!" />
+        </form>
         <script type="text/javascript">
             // 在這裡的javascript會在頁面載入的時候執行
-            alert(document.getElementById("input1").value);
+            alert(document.forms[0].getElementsByTagName("input")[0].value);
         </script>
     </body>
 </html>

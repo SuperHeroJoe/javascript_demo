@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sample2-2</title>
+        <meta charset="utf-8">
+        <style>
+            .css1 {color: red;}
+            .css2 {color: blue;}
+        </style>
+        <script type="text/javascript">
+            // 在這裡的javascript會被調用的時候才執行
+            // 還沒載入body前
+            
+        </script>
+        <!--採用讀取外部javascript檔案的方式-->
+        <script src="js/jquery-3.2.1.min.js"></script>
+    </head>
+    <body>
+        <div id="div1" class="css1">fannie is a very beautiful girl!!</div>
+
+        <input type='button' id="btn_addclass" value='addclass-新增一個css屬性' /><br />
+        <input type='button' id="btn_rmclass" value='rmclass-移除一個指定的css屬性' />
+    </body>
+    <script type="text/javascript">
+        // 在這裡的javascript會在頁面載入的時候執行
+        $(document).ready(function(){
+            $('#btn_addclass').click(function(){
+                $('#div1').addClass("css2");
+            });
+
+            $('#btn_rmclass').click(function(){
+                $('#div1').removeClass("css2");
+            });
+        });  
+    </script>
+</html>
