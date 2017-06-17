@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sample2-4</title>
+        <meta charset="utf-8">
+        <style>
+            .css1 {color: red;}
+            .css2 {color: blue;}
+            .css3 {color: green;}
+            .css4 {color: yellow;}
+        </style>
+        <!--採用讀取外部javascript檔案的方式-->
+        <script src="js/jquery-3.2.1.min.js"></script>
+
+        <script type="text/javascript">
+            $('#div1').addClass("css1");
+
+            $(document).ready(function(){
+                $('#div1').addClass("css2");
+            });
+        </script>
+    </head>
+    <body>
+        <div id="div1">看這裡</div>
+
+        <script type="text/javascript">
+            $('#div1').addClass("css3");
+        </script>
+    </body>
+</html>

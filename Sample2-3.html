@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Sample2-2</title>
+        <title>Sample2-3</title>
         <meta charset="utf-8">
         <style>
             .css1 {color: red;}
@@ -20,6 +20,7 @@
 
         <input type='button' id="btn_addclass" value='addclass-新增一個css屬性' /><br />
         <input type='button' id="btn_rmclass" value='rmclass-移除一個指定的css屬性' />
+        <input type="button" onclick="test(this);" />
     </body>
     <script type="text/javascript">
         // 在這裡的javascript會在頁面載入的時候執行
@@ -31,6 +32,13 @@
             $('#btn_rmclass').click(function(){
                 $('#div1').removeClass("css2");
             });
-        });  
+        }); 
+
+        var a = $('#div1');
+        a.add("div").attr("test");
+
+        function test(this){
+            $(this).value = "test";
+        }
     </script>
 </html>
